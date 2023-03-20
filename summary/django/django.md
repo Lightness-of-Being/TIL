@@ -31,13 +31,23 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 ## 5. .gitignore 파일 생성
-[gitignore](https://www.toptal.com/developers/gitignore) 파일 생성하는 사이트
+[.gitignore](https://www.toptal.com/developers/gitignore) 파일 생성해주는 사이트
 
-## 6. git 저장소 생성
-```bash
-```
+## 6. git 환경 조성
+
 ## 7. django 프로젝트 생성
 ```bash
-django-admin startproject 
+django-admin startproject fristpjt .
+
+# firstpjt 이름 
+# . 현재 위치에 생성
 ```
+## 8. 장고 실행
+```bash
+python manage.py runserver
+```
+링크를 눌러 화면 확인
+
+![django_rocket](../../img/django_rocket.png)
+화면이 나오면 성공
  
