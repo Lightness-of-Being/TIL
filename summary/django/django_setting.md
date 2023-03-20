@@ -1,5 +1,6 @@
 # 가상환경과 Django 시작하기
 
+
 ## 1. 가상환경 생성
 ```bash
 python -m venv venv
@@ -45,8 +46,10 @@ django-admin startproject fristpjt .
 ## 8. 장고 실행
 ```bash
 python manage.py runserver
+
+# 프로젝트와 가상환경이 같이 있는 위치인지 확인
 ```
-링크를 눌러 화면 확인
+서버 링크를 눌러 화면 확인
 
 ![django_rocket](../../img/django_rocket.png)
 화면이 나오면 성공
