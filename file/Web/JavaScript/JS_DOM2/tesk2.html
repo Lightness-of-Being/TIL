@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="original" class="container">
+    <div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">이메일</label>
+        <input type="email" class="form-control" id="inputEmail">
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="form-label">비밀번호</label>
+        <input type="password" class="form-control" id="inputPassword">
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-primary" role="submit">로그인</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="copy" class="container">
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+<script>
+  // div#original 과 동일한 DOM 생성 후 div#copy 의 자식 요소로 추가
+  const copyId = document.querySelector('#copy')
+
+  const copyDiv = document.createElement('div')
+
+  const copyDiv1 = document.createElement('div')
+  const copyDiv2 = document.createElement('div')
+  const copyDiv3 = document.createElement('div')
+
+  copyDiv1.classList.add('mb-3')
+  copyDiv2.classList.add('mb-3')
+  copyDiv3.classList.add('mb-3')
+
+  // copydiv1 만들기
+  const copyLabel1 = document.createElement('label')
+  copyLabel1.setAttribute('for', 'inputEmail')
+  copyLabel1.classList.add('form-label')
+  copyLabel1.textContent = '이메일'
+  
+  const copyInput1 = document.createElement('input')
+  copyInput1.setAttribute('type', 'email')
+  copyInput1.classList.add('form-control')
+  copyInput1.setAttribute('id', 'inputEmail')
+  
+  copyDiv1.appendChild(copyLabel1)
+  copyDiv1.appendChild(copyInput1)
+  
+  // copydiv2 만들기
+  const copyLabel2 = document.createElement('label')
+  copyLabel2.setAttribute('for', 'inputPassword')
+  copyLabel2.classList.add('form-label')
+  copyLabel2.textContent = '비밀번호'
+  
+  const copyInput2 = document.createElement('input')
+  copyInput2.setAttribute('type', 'password')
+  copyInput2.classList.add('form-control')
+  copyInput2.setAttribute('id', 'inputPassword')
+  
+  copyDiv2.appendChild(copyLabel2)
+  copyDiv2.appendChild(copyInput2)
+  
+  // copydiv3 만들기
+  const copyButton3 = document.createElement('button')
+  copyButton3.classList.add('btn', 'btn-primary')
+  copyButton3.setAttribute('role', 'submit')
+  copyButton3.textContent = '로그인'
+
+  copyDiv3.appendChild(copyButton3)
+
+    
+  copyDiv.appendChild(copyDiv1)
+  copyDiv.appendChild(copyDiv2)
+  copyDiv.appendChild(copyDiv3)
+
+  copyId.appendChild(copyDiv)
+</script>
+
+</html>

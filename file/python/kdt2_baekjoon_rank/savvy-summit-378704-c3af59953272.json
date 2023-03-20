@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "savvy-summit-378704",
+  "private_key_id": "c3af59953272f9f532e87672d209162cafea0146",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC56lLMxILhZNUv\n8VC2zExFUrutwHTe6ukSqPLWh6bpZRzvSggX+LDSMeNUZVNHmuCusZZZq+07H8eF\noMpL0ZQoDRLdw/TfoKFclFLIMfVYwajn2hjrmCFOiNWSLHYgCMdgthToCjDEV7bD\nWhH2xrsdL6WTvDido4wOOZCk6gp5guS8oKGT8/K8YejnvWiV6ozjgn300uuVas+f\nAiyuDb4Dy0LCIHtcxrynVtWpPW32AyV/hgAUFI9AigBLCD0Wxsok184yo8GCtYdK\n3pIfr4Ufu4hjbv4vjw5r6GeOx26Jk8EgEdhyD8sL+8NmRxuCgit2p9kafoBt/HsK\nW93CnmcPAgMBAAECggEAEqf9fBfiLF0SeZelKlrQ8ontVG/CKpZ3Igy7JaUCLlyb\nrTWIH2Ow1r7z2YW7eC2GC3G9rSzwBuVW/8VVV4tl6yj4sjFWUtSLLL+jmPxOawQv\n/2gm5Qlkmj1n9R2qEufenglXirtvDlzg9bSFpfZmU3TzECKsqcD+LnU/WxUzTOMW\nINxcDvSOGevSS2WV4xIEyoW/js68WFD7mxwdw15qsniHsWyp1Dkv9Zmuz2bln/GO\nJs/PTsZGox/6cEcL+f4rrRs4bwCXCVNLDKkDw2I8V13pextTEzP18cTuy3Mze31O\nzimXcUH+23YIcqeC0XRfoQaxRbVZGVzsKlI6SgEkSQKBgQD0Yq8FsbmHnnTrGla6\nPBd6QkMArKV0ZGg/WuSHKz0PXJcnrVRAusc4LkrabO1HYs63FEAuD2isRQghsjBP\naZVZ1tsR5z5rGtjQzLh4z8/JNm/kJRoJenmXQNgX1CM2A9IODedHyw+0KnG5fR61\n/kSLdt23/9NsiCK483Z+DriU5wKBgQDCwEMztEVku995vFsg2NhkQdF15zhDAisv\ntJDVvdIZuYxscHmn9lTqQR+VmGK3svs0qEWj/AHNAybgW7XCsz2OxfZyhSltm/PS\nEvFbQeY+1ic7Vfy9zOzIFmEK32hfu8Z52aYnDPh+hkLJjtmXSRCkZtq4R23Vm3YV\n922Xv3EvmQKBgQDuqk1pTzb0ZmCilddrC3KWOI384561+7T/YoHaK/T2wqLv4ctt\nZ7tVd4gspsJXu/xLOaCwGuZLjyMw3Tdm5qMv2K+bXW1M5iwmRjhF7BVt2RcPBNjX\ntt92QqKHKuq0Pqjuhs9/AqW0etsTnkjWzZodZZmEr3fH/2+Blmr7Et9aswKBgCBz\nOL9cwlNOmqYGJIkMmMHb1bL3nABOVDPWumti/acbq7JF6395JB0ETOb4RTqmsATO\nJQx16Tbn14p6vYZ7pz4q7i2W0phY6/+M+HpkOKEvvcm9Qie+BZYxZGoTX6jT+PZE\ntdK77ovmgypiiw8SNZuvJ7Kc9EgrZzmxyKkIVSvBAoGBAKgQFlRgxk240NvJF6mG\nE5/V202owMM3YxtMNKd41GyPylbRnKL4cXZDK/SqQh0ZTDFuo8Y1WaBujJy9w/ih\nndNNwW8qG9pHDi80vF7A/k/WJBkjfbMYC5i2rdyXYsqjLwzSHYRfzRZJcJRbvzQZ\n2l0+HlLhMMihIVY9mWAJfYkf\n-----END PRIVATE KEY-----\n",
+  "client_email": "kdt-sheet@savvy-summit-378704.iam.gserviceaccount.com",
+  "client_id": "101420734729267986675",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kdt-sheet%40savvy-summit-378704.iam.gserviceaccount.com"
+}

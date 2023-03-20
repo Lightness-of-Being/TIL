@@ -1,0 +1,8 @@
+CREATE TABLE a
+    (b VARCHAR(10), 
+    c VARCHAR(10)
+);
+INSERT INTO a
+VALUES ('안녕', NULL);
+INSERT INTO a
+VALUES ('반갑', 'NULL');

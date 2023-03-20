@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    p {
+      color: white;
+    }
+
+    .container {
+      padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      background-color: #282828;
+      height: 1400px;
+    }
+
+    .navbar {
+      height: 50px;
+      display: flex;
+      background-color: #282828;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      margin-left: 3%;
+    }
+
+    .logo > span {
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+
+    .login {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      border: solid 1px white;
+      border-radius: 15px;
+      padding: 5px 10px;
+      margin-right: 3%;
+      color: hsl(206.1, 79.3%, 52.7%);
+    }
+
+    .login > span {
+      margin-left: 10px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      height: 600px;
+      margin-top: 10px;
+      
+    }
+
+    .item {
+      flex-basis: 30%;
+      margin-right: 10px;
+    }
+
+    .title {
+      font-size: large;
+      font-weight: bold;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="logo" width="40">
+        <span>Youtube</span>
+      </div>
+      <div class="login">
+        <span>로그인</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="hsl(206.1, 79.3%, 52.7%)" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="content">
+      <div class="item">
+        <img src="https://www.themoviedb.org/t/p/original/v4qxsrcjmnUYCtu8XrSklJ7kble.jpg" alt="웬즈데이" width="100%">
+        <div>
+          <p class="title">Wednesday</p>
+          <p>똑똑하고 비꼬는 것에 도가 튼 웬즈데이 아담스. 암울함을 풍기는 그녀가 네버모어 아카데미에서 연쇄 살인 사건을 조사하기 시작한다. 새 친구도 사귀고, 앙숙도 만들며.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://www.themoviedb.org/t/p/original/kuf6dutpsT0vSVehic3EZIqkOBt.jpg" alt="장화신은고양이" width="100%">
+        <div>
+          <p class="title">Puss in Boots: The Last Wish</p>
+          <p>아홉 개의 목숨 중 단 하나의 목숨만 남은 장화신은 고양이.잃어버린 목숨을 되찾고 다시 히어로가 되기를 꿈꾸는 장화신은 고양이는 뜻밖에 동료가 된 앙숙 파트너 '키티 말랑손', 그저 친구들과 함께라면 모든 게 행복한 강아지 '페로'와 함께 소원별을 찾기 위해 길을 떠난다.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://www.themoviedb.org/t/p/original/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" alt="아바타" width="100%">
+        <div>
+          <p class="title">Avatar: The Way of Water</p>
+          <p>판도라 행성에서 제이크 설리와 네이티리가 이룬 가족이 겪게 되는 무자비한 위협과 살아남기 위해 떠나야 하는 긴 여정과 전투, 그리고 견뎌내야 할 상처에 대한 이야기를 그렸다. 살아남기 위해 설리 가족이 숲에서 바다로 터전을 옮기면서 겪게 되는 화합의 과정, 그리고 곳곳에서 도사리는 새로운 위협까지 역경 속에서 더 아름답게 펼쳐진다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

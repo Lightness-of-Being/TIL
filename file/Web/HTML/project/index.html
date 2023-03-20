@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      .move {
+        left: 0;
+        top: 70px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top mt-3">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a href="https://www.airbnb.co.kr">
+            <img src="logo.png" alt="" style="width: 80px;">
+            </a>
+          </div>
+          <ul class="nav navbar-nav flex-row">
+            <li class="nav-item mx-2 fw-bold"><a class="nav-link active" aria-current="page" href="https://www.airbnb.co.kr/host/homes?">호스팅 시작하기</a></li>
+            <li class="nav-item mx-2 fw-bold"><a class="nav-link active" aria-current="page" href="https://www.airbnb.co.kr/signup_login">회원 가입</a></li>
+            <li class="nav-item mx-2 fw-bold"><a class="nav-link active" aria-current="page" href="https://www.airbnb.co.kr/login">로그인</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class= "">
+        <div class="position-relative">
+          <img src="0.jpg" alt="" style="width: 70%;" class="position-absolute top-0 end-0 rounded-3">
+          <div class="card p-4 rounded-3 shadow position-absolute move" style="width: 480px; height: auto;">
+            <h3 class="card-title fw-bold">한국의 휴가 임대 시설</h3>
+            <h6 class="card-subtitle mb-2 text-muted">에어비앤비에서 독특한 숙소를 예약하세요.</h6>
+            <div class="card-body p-0">
+              <div class="row">
+                <!-- 위치 -->
+                <div class="col-md-12 mb-3">
+                  <label for="location-input" class="form-label">위치</label>
+                  <input type="text" class="form-control" id="location-input" placeholder="어디로 여행가세요?">
+                </div>
+                <!-- 체크인, 체크아웃 -->
+                <div class="col-md-6 mb-3">
+                  <label for="checkin-input" class="form-label">체크인</label>
+                  <input type="date" class="form-control" id="checkin-input">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="checkout-input" class="form-label">체크아웃</label>
+                  <input type="date" class="form-control" id="checkout-input">
+                </div>
+                <!-- 성인, 어린이 -->
+                <div class="col-md-6 mb-3">
+                  <label for="adults-input" class="form-label">성인</label>
+                  <select class="form-select" id="adults-input">
+                    <option value="1">1명</option>
+                    <option value="2">2명</option>
+                    <option value="3">3명</option>
+                    <option value="4">4명</option>
+                    <option value="5">5명</option>
+                    <option value="6">6명</option>
+                    <option value="7">7명</option>
+                    <option value="8">8명</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="children-input" class="form-label">어린이</label>
+                  <select class="form-select" id="children-input">
+                    <option value="0">0명</option>
+                    <option value="1">1명</option>
+                    <option value="2">2명</option>
+                    <option value="3">3명</option>
+                    <option value="4">4명</option>
+                    <option value="5">5명</option>
+                    <option value="6">6명</option>
+                    <option value="7">7명</option>
+                    <option value="8">8명</option>
+                  </select>
+                </div>
+                <!-- 검색 -->
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary w-100 border-0" style="background-color: rgb(255, 95, 100);">검색</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>한구으이dd</h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>      
+  </body>
+</html>
