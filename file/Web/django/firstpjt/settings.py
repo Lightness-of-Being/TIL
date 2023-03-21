@@ -31,6 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # app 등록 권장 순서
+    # 1. locl app
+    'berners_lee',
+    # 2. 3rd party app (설치를 통해 추가하는 앱)
+    # 3. 기본 장고 app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

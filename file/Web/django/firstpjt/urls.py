@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from berners_lee import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('berners-lee/', views.index),
 ]
