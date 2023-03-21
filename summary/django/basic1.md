@@ -90,4 +90,5 @@ def index(request):
 ```
 ## 3. Templates
 - 보여지고 싶은 html 파일 작성
-    
+
+![](../../img/hello.png)
