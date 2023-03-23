@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <form action="/catch/" class="mt-5">
+        <label for="text">입력:</label>
+        <input type="text" name="message" id="text">
+        <input type="submit">
+    </form>
+</div>
+{% endblock body %}
