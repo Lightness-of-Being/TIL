@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container text-center row">
+    <div class="col-6 mt-5">
+        <ul>
+            <li>
+                <a href="{% url 'index' %}">index</a>
+            </li>
+            <li>
+                <a href="{% url 'pages:throw' %}">throw</a>
+            </li>
+            <li>
+                <a href="{% url 'pages:catch' %}">catch</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock body %}

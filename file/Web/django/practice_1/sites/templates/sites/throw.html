@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <form action="/sites/catch/" method="get">
+        <label for="message"></label>
+        <input type="text" name="message" id="message">
+        <input type="submit">
+    </form>
+</div>
+{% endblock body %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+  <div class="list-group mt-5">
+    <div class="title" align='center'>
+        <h1>목차</h1>
+    </div>
+    <a href="{% url 'index' %}" class="list-group-item list-group-item-action">
+      index
+    </a>
+    <a href="{% url 'sites:throw' %}" class="list-group-item list-group-item-action">
+      throw
+    </a>
+    <a href="{% url 'sites:catch' %}" class="list-group-item list-group-item-action">
+      catch
+    </a>  
+    <a href="{% url 'sites:print' %}" class="list-group-item list-group-item-action">
+      print
+    </a>  
+  </div>
+</div>
+{% endblock body %}

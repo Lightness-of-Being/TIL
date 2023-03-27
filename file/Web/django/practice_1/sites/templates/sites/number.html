@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container mt-5">
+    <h1>{{ number }}</h1>
+    <a href="{% url 'print' %}">뒤로</a>
+</div>
+{% endblock body %}
