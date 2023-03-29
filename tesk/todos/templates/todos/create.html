@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+create
+{% endblock title %}
+{% block body %}
+<div class="container">
+  <h1 class="text-center mt-5">create</h1>
+  <hr>
+  <h2>작성되었습니다</h2>
+  <div class="text-end">
+    <a class="btn btn-primary mx-3" href="{% url 'todos:new' %}">뒤로</a>
+    <a class="btn btn-info" href="{% url 'index' %}">목록</a>
+  </div>
+
+</div>
+{% endblock body %}

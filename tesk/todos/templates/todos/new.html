@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+new
+{% endblock title %}
+{% block body %}
+<div class="container">
+  <h1 class="text-center mt-5">new</h1>
+  <hr>
+  <form action="{% url 'todos:create' %}" method="get">
+    <div class="mb-3">
+      <label for="title" class="form-label">제목</label>
+      <input name="title" type="text" class="form-control" id="title" placeholder="제목">
+    </div>
+    <div class="mb-3">
+      <label for="content" class="form-label">내용</label>
+      <textarea name="content" class="form-control" id="content" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="completed" class="form-label">완료 여부 : </label>
+      <input type="checkbox" name="completed" id="completed">
+    </div>
+    <div class="mb-3">
+      <label for="priority" class="form-label">우선순위 : </label>
+      <input type="number" name="priority" id="priority">
+    </div>
+    <div class="mb-3">
+      <label for="deadline" class="form-label">마감기한 : </label>
+      <input type="date" name="deadline" id="deadline">
+      <input class="mx-3 btn btn-primary" type="submit">
+    </div>
+    <div class="text-end">
+      <a class="btn btn-info" href="{% url 'index' %}">돌아가기</a>
+    </div>
+  </form>
+</div>
+{% endblock body %}

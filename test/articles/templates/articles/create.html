@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+  <h1 class="text-center mt-5">create</h1>
+  <hr>
+  <h2>작성되었습니다</h2>
+  <a href="{% url 'articles:new' %}">뒤로</a>
+  <br>
+  <a href="{% url 'articles:index' %}">목록</a>
+
+</div>
+{% endblock body %}

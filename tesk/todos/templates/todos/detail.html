@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+detail
+{% endblock title %}
+{% block body %}
+<div class="container">
+  <h1 class="text-center mt-5">detail</h1>
+  <hr>
+  <div class="list-group">
+    <div class="list-group-item">pk : {{ todo.pk }}</div>
+    <div class="list-group-item">제목 : {{ todo.title }}</div>
+    <div class="list-group-item">내용 : {{ todo.content }}</div>
+    <div class="list-group-item">완료 : {{ todo.completed }}</div>
+    <div class="list-group-item">우선순위 : {{ todo.priority }}</div>
+    <div class="list-group-item">deadline : {{ todo.deadline }}</div>
+  </div>
+  <div class="text-end">
+    <a class="btn btn-info my-3" href="{% url 'index' %}">돌아가기</a>
+  </div>
+</div>
+{% endblock body %}

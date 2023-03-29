@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+  <h1 class="text-center mt-5">New</h1>
+  <hr>
+  <form action="{% url 'articles:create' %}" method="get">
+    <label for="title">제목 : </label>
+    <input type="text" name='title'>
+    <br>
+    <br>
+    <label for="content">내용 : </label>
+    <textarea name="content" id="content" cols="30" rows="10"></textarea>
+    &nbsp&nbsp&nbsp&nbsp
+    <input type="submit">
+  </form>
+  <a href="{% url 'articles:new' %}">만들기</a>
+  <br>
+  <a href="{% url 'articles:index' %}">목록</a>
+</div>
+{% endblock body %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+  <h1 class="text-center mt-5">Articles</h1>
+  <hr>
+  <div class="list-group">
+    {% for article in articles%}
+    <a class='list-group-item' href="{% url 'articles:detail' article.pk%}">{{ article.title }}</a>
+    {% endfor %}
+  </div>
+  <div class="text-end">
+    <a class='btn btn-primary my-3 ' href="{% url 'articles:new' %}">create</a>
+  </div>
+</div>
+{% endblock body %}
