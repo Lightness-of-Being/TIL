@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+index
+{% endblock title %}
+{% block body %}
+<div class="container my-3">
+    <h1 class="text-center">index</h1>
+    <hr>
+    <table class="table">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">#</th>
+            <th scope="col">제목</th>
+            <th scope="col">영화</th>
+
+          </tr>
+        </thead>
+        {% for review in reviews %}
+        <tbody>
+          <tr onclick="window.location='{% url 'reviews:detail' review.pk %}'" style="cursor:pointer;">
+            <th scope='row'>{{ review.pk }}</th>
+            <td>{{ review.title }}</td>
+            <td>{{ review.movie }}</td>
+          </tr>
+        </tbody>
+        {% endfor %}
+      </table>
+      <hr>
+      <a href="{% url 'reviews:create' %}">[생성]</a>
+</div>
+{% endblock body %}

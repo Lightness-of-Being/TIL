@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}index{% endblock title %}
+{% block body %}
+<div class="container">
+  <h1 class = 'text-center m-5'>index</h1>
+  <hr>
+  <h3>안녕하세요 {{ user }}</h3>
+  <hr>
+  {% comment %} <div class="d-flex justify-content-end">
+    {% if '{{ user }}' == 'AnonymousUser'%}
+    <a type="button" class="btn btn-outline-primary m-3" href="{% url 'accounts:login' %}">로그인</a>
+    <form action="{% url 'accounts:logout' %}" method="post">
+      {% csrf_token %}
+      
+      <input type="submit" value="로그아웃" class="btn btn-outline-danger m-3" >
+    </form>
+    {% else %}
+    <a type="button" class="btn btn-outline-primary m-3 " href="{% url 'accounts:login' %}">로그인</a>
+    <form action="{% url 'accounts:logout' %}" method="post">
+      {% csrf_token %}
+      
+      <input type="submit" value="로그아웃" class="btn btn-outline-danger m-3">
+    </form>
+    {% endif %}
+  </div>  {% endcomment %}
+</div>
+{% endblock body %}

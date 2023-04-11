@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}detail{% endblock title %}
+{% block body %}
+<div class="container">
+  <h1 class='text-center m-3'>Detail</h1>
+  <hr>
+  <div class="row">
+    <div class="card border-light shadow rounded col-10 offset-1 my-3" style="width: 70rem;">
+      <div class="card-header">
+        <h4>Note : {{accountbook.note}}</h4>
+      </div>
+      <div class="card-body">
+        <div class="text-secondary list-group list-group-flush ">
+            <li class="list-group-item">Category : {{accountbook.category}}</li>
+            <li class="list-group-item">Amount : {{accountbook.amount}}</li>
+            <li class="list-group-item">Date : {{accountbook.date}}</li>
+            <li class="list-group-item">Memo : {{accountbook.description}}</li> 
+        </div>
+      </div>
+      <div class="card-footer text-secondary row">
+        <li class="list-group-item col-3 mt-3 ms-2">생성일 : {{accountbook.created_at}}</li>
+        <li class="list-group-item col-3 mt-3">수정일 : {{accountbook.updated_at}}</li>
+        <a class="btn btn-outline-dark col-1 m-2" href="{% url 'accountbooks:edit' accountbook.pk %}" role="button">수정</a>
+        <a class="btn btn-outline-danger col-1 m-2" href="{% url 'accountbooks:delete' accountbook.pk %}" role="button">삭제</a>  
+        <a class="btn btn-outline-info col-1 m-2" href="{% url 'accountbooks:index' %}" role="button">목록</a>  
+        <a class="btn btn-outline-success col-1 m-2" href="{% url 'accountbooks:copy' accountbook.pk %}" role="button">복사</a> 
+      </div>  
+    </div>
+  </div>
+</div>
+{% endblock body %}
+
+
+
+

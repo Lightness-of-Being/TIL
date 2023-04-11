@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}signup{% endblock title %}
+{% block body %}
+<div class="container">
+  <h1 class = 'text-center m-5'>login</h1>
+  <form action="{% url 'accounts:signup' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="로그인">
+  </form>
+  <hr>
+  <a class="btn btn-outline-primary m-3" href="{% url 'accounts:index' %}">index</a>
+</div>
+{% endblock body %}

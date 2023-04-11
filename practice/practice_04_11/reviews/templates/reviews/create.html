@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+create
+{% endblock title %}
+{% block body %}
+<div class="container my-3">
+    <h1 class="text-center">create</h1>
+    <hr>
+    <form action="{% url 'reviews:create' %}" method="post">
+        {% csrf_token %}
+        {{ review_form.as_p }}
+        <input type="submit">
+    </form>
+    <a href="{% url 'reviews:index' %}">[돌아가기]</a>
+</div>
+{% endblock body %}

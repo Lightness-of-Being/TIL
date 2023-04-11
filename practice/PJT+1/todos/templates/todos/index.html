@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}index{% endblock title %}
+{% block body %}
+<div class="container">
+    <h1 class='text-center m-3'>index</h1>
+    <hr>
+    <div class="list-group row">
+        <div class="col-10 offset-1">
+            <div class="list-group-item active text-center">
+                제목
+            </div>
+            {% for todo in todos%}
+            <a href="{% url 'todos:detail' todo.pk%}" class="list-group-item list-group-item-action">
+                <div>{{todo.pk}}번 <span class="mx-5">{{todo.title}}</span></div>       
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="text-end">
+        <a class="btn btn-outline-success btn-lg" href="{% url 'todos:new' %}">만들기</a>
+    </div>
+</div>
+{% endblock body %}

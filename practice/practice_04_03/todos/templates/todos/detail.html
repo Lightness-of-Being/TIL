@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}detail{% endblock title %}
+{% block body %}
+<div class="container">
+  <h1 class = 'text-center m-5'>detail</h1>
+  <hr>
+  <div class="d-flex justify-content-end">
+    <a type="button" class="btn btn-outline-info m-3 " href="{% url 'todos:index' %}">목록</a>
+    <a type="button" class="btn btn-outline-danger m-3 " href="{% url 'todos:delete' todo.pk%}">삭제</a>
+  </div>
+</div>
+{% endblock body %}

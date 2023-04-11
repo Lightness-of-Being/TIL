@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}login{% endblock title %}
+{% block body %}
+<div class="container">
+  <h1 class = 'text-center m-5'>login</h1>
+  <form action="{% url 'accounts:login' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="로그인">
+  </form>
+</div>
+{% endblock body %}

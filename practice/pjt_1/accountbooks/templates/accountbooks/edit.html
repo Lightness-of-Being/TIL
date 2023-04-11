@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}edit{% endblock title %}
+{% block body %}
+<div class="container">
+    <h1 class='text-center m-3'>edit</h1>
+    <hr>
+    <form action="{% url 'accountbooks:update' accountbook.pk %}" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="note" class="form-label">내용</label>
+          <input name="note" type="text" class="form-control" id="note" value="{{accountbook.note}}" placeholder="내용">
+        </div>
+        
+       <div class="mb-3">
+            <label for="category" class="form-label">분류</label>
+            <select id="category" class="form-select form-control" name="category">
+                <option selected disabled>{{ accountbook.category }}</option>
+                <option>식비</option>
+                <option>고정비</option>
+                <option>기타</option>
+            </select>
+        </div>
+
+        {% comment %} <div class="mb-3">
+            <label for="category" class="form-label">분류</label>
+            <select id="category" class="form-select form-control">
+                <option selected disabled>분류를 선택하세요.</option>
+                <option>식비</option>
+                <option>고정비</option>
+                <option>기타</option>
+            </select>
+        </div>  {% endcomment %}
+        
+        
+        <div class="mb-3">
+          <label for="amount" class="form-label">사용금액</label>
+          <input type="number" name="amount" id="amount" value="{{accountbook.amount}}" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">사용날짜</label>
+          <input type="date" name="date" id="date" value="{{accountbook.date}}" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">메모</label>
+          <textarea name="description"  id="description" rows="3" class="form-control">{{accountbook.description}}</textarea>
+        </div>
+        <div class="text-end">
+            <input class="mx-3 btn btn-outline-primary col-1 offset-8" type="submit">
+            <a class="mx-3 btn btn-outline-dark col-1" href="{% url 'accountbooks:detail' accountbook.pk %}">돌아가기</a>
+            <a class="ms-3 btn btn-outline-info col-1" href="{% url 'accountbooks:index' %}" role="button">목록</a>  
+
+        </div>
+    </form>
+</div>
+{% endblock body %}
